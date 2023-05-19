@@ -8,9 +8,10 @@ import javax.swing.JOptionPane;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Field field = new Field(13);
 		Info info = new Info();
-		Player player = new Player();
+		Player player = new Player("Game Master");
 		
 		Player playerA = new Player("Minerva");
 		Player playerB = new Player("Apollo");
@@ -22,6 +23,10 @@ public class Main {
 		playerB.optionMachine(
 				JOptionPane.showInputDialog(info.textOptionMachine())
 				);
+		if (playerB.isMachine) {
+			playerB.setName("Deus ex Machina");
+		}
+		
 		
 		while ( !player.isWinner() ) {
 			field.setTurn( field.getTurn() +1 );
