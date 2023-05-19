@@ -31,9 +31,13 @@ public class Player {
 	public void setInput(String input) {this.input = input;}	
 	public String getInput() {return this.input;}
 	
-	public void setAmount(int amount) {this.amount = amount;}	
+	private void setAmount(int amount) {this.amount = amount;}	
 	public int getAmount() {return this.amount;}
 
+	
+	public void lockAmount(String input) {
+		setAmount( Integer.parseInt( input ) );
+	}
 	
 	public void optionMachine(String option) {
 		if ( !option.equals("0") || option.equals("") ) {
