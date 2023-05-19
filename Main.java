@@ -54,9 +54,7 @@ public class Main {
 								+ info.textAmountPlayer()
 								)
 							);
-					player.setAmount( 
-							Integer.parseInt(player.getInput() )
-							);
+					player.lockAmount( player.getInput() );
 					info.setError(true);
 				}
 			}else {
