@@ -38,8 +38,8 @@ public class Field {
 	}	
 	
 	public String buildField() {
-		String field="";
-		for(int i=0; i<this.matches; i++) {
+		String field ="";
+		for (int i=0; i<this.matches; i++) {
 			field += " | ";
 		}	
 		return field;
