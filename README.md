@@ -1,6 +1,4 @@
 # Nim
-@author **Schema**
-
 
 # Spielregeln
 
