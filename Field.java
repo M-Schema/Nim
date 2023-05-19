@@ -1,6 +1,5 @@
 
 /**
- * @version 2023-05-03
  * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
  */
 
