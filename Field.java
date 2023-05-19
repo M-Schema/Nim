@@ -4,19 +4,23 @@
  */
 
 public class Field {
-	private int turn;
 	private int matches;
+	private int turn;
 	
 	public Field(int matches) {
-		this.turn = 0; 
 		this.matches = matches;
+		this.turn = 0; 
 	}
-
-	public void setTurn(int turn) {this.turn = turn;}
-	public int getTurn() {return turn;}
 	
 	public void setMatches(int matches) {this.matches = matches;}
-	public int getMatches() {return matches;}
+	public int getMatches() {return this.matches;}
+	
+	private void setTurn(int turn) {this.turn = turn;}
+	public int getTurn() {return this.turn;}
+	
+	public void nextTurn() {
+		setTurn( getTurn()++ );
+	}
 	
 	public boolean canDrawMatches(String amount) {
 		if (   amount.equals("1")
