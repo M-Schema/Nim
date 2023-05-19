@@ -12,7 +12,7 @@ public class Field {
 		this.turn = 0; 
 	}
 	
-	public void setMatches(int matches) {this.matches = matches;}
+	private void setMatches(int matches) {this.matches = matches;}
 	public int getMatches() {return this.matches;}
 	
 	private void setTurn(int turn) {this.turn = turn;}
