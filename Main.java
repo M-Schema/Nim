@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /**
- * @version 2023-05-03
+ * @version 2023-05-19
  * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
  */
 
@@ -32,11 +32,11 @@ public class Main {
 				
 				player.setInput("");
 				info.setError(false);
-				while( !field.canDrawMatches( player.getInput() )) {
-					if ( info.getError() ) {
+				while ( field.canDrawMatches( player.getInput() ) == false ) {
+					if ( info.isErrorStatus() ) {
 						JOptionPane.showMessageDialog(null,	
 							info.textError()
-							, "Error", JOptionPane.INFORMATION_MESSAGE
+							, "Error", JOptionPane.ERROR_MESSAGE
 							);
 					}
 					
@@ -44,7 +44,8 @@ public class Main {
 							JOptionPane.showInputDialog(
 								info.textStartTurn( player.getName(),
 													field.getMatches(),
-													field.buildField())
+													field.buildField()
+										  )
 								+ info.textAmountPlayer()
 								)
 							);
@@ -53,11 +54,12 @@ public class Main {
 							);
 					info.setError(true);
 				}
-			}else{
+			}else {
 				JOptionPane.showMessageDialog(null,
 					info.textStartTurn( player.getName(),
 										field.getMatches(),
-										field.buildField())
+										field.buildField() 
+							  )
 					+ info.textAmountMachine(player.getName())
 					, player.getName() +" ist am Zug.", JOptionPane.INFORMATION_MESSAGE
 					);
@@ -71,12 +73,13 @@ public class Main {
 			JOptionPane.showMessageDialog(null, 
 				info.textEndTurn( player.getName(), 
 								player.getAmount(), 
-								field.getMatches())
+								field.getMatches()
+						)
 				, "Ergebnis Runde " + field.getTurn(), JOptionPane.INFORMATION_MESSAGE
 				);
 			
 			
-			if (field.getMatches() <= 0) {player.setWinner(true);}
+			if ( field.getMatches() <= 0 ) {player.setWinner(true);}
 		}
 		
 		JOptionPane.showMessageDialog(null,
