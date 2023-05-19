@@ -23,7 +23,7 @@ public class Main {
 		playerB.optionMachine(
 				JOptionPane.showInputDialog(info.textOptionMachine())
 				);
-		if (playerB.isMachine) {
+		if ( playerB.isMachine ) {
 			playerB.setName("Deus ex Machina");
 		}
 		
@@ -33,7 +33,7 @@ public class Main {
 			if ( field.getTurn() %2 == 1 ) { player = playerA; }
 			if ( field.getTurn() %2 == 0 ) { player = playerB; }
 	
-			if (player.isMachine() == false) {		
+			if ( player.isMachine() == false ) {		
 				
 				player.setInput("");
 				info.setError(false);
