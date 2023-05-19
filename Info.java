@@ -1,18 +1,17 @@
 
 /**
- * @version 2023-05-03
  * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
  */
 
 public class Info {
-	private boolean error;
+	private boolean errorStatus;
 	
 	public Info() {
-		this.error = false;
+		this.errorStatus = false;
 	}
 
-	public void setError(boolean error) {this.error = error;}
-	public boolean getError() {return error;}
+	public void setErrorStatus(boolean errorStatus) {this.errorStatus = errorStatus;}
+	public boolean getErrorStatus() {return errorStatus;}
 
 	
 	public String textBeginning() {
