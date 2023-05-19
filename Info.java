@@ -11,7 +11,7 @@ public class Info {
 	}
 
 	public void setErrorStatus(boolean errorStatus) {this.errorStatus = errorStatus;}
-	public boolean getErrorStatus() {return errorStatus;}
+	public boolean isErrorStatus() {return errorStatus;}
 
 	
 	public String textBeginning() {
