@@ -29,7 +29,7 @@ public class Main {
 		
 		
 		while ( !player.isWinner() ) {
-			field.setTurn( field.getTurn() +1 );
+			field.nextTurn();
 			if ( field.getTurn() %2 == 1 ) { player = playerA; }
 			if ( field.getTurn() %2 == 0 ) { player = playerB; }
 	
