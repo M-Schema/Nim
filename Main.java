@@ -50,7 +50,7 @@ public class Main {
 								info.textStartTurn( player.getName(),
 													field.getMatches(),
 													field.buildField()
-										  )
+										 		 	)
 								+ info.textAmountPlayer()
 								)
 							);
@@ -64,10 +64,11 @@ public class Main {
 					info.textStartTurn( player.getName(),
 										field.getMatches(),
 										field.buildField() 
-							  )
+							  			)
 					+ info.textAmountMachine(player.getName())
 					, player.getName() +" ist am Zug.", JOptionPane.INFORMATION_MESSAGE
 					);
+				
 				player.machineKillerStrategy( field.getMatches() );	
 			}
 			
@@ -79,12 +80,12 @@ public class Main {
 				info.textEndTurn( player.getName(), 
 								player.getAmount(), 
 								field.getMatches()
-						)
+								)
 				, "Ergebnis Runde " + field.getTurn(), JOptionPane.INFORMATION_MESSAGE
 				);
 			
 			
-			if ( field.getMatches() <= 0 ) {player.setWinner(true);}
+			if ( field.getMatches() <= 0 ) { player.setWinner(true); }
 		}
 		
 		JOptionPane.showMessageDialog(null,
