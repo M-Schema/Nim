@@ -7,9 +7,9 @@ import java.util.Random;
 public class Player {
 	private String name;
 	private boolean machine;
+	private boolean winner;
 	private String input;
 	private int amount;
-	private boolean winner;
 
 	public Player(String name) {
 		this.name = name;
@@ -22,16 +22,16 @@ public class Player {
 	
 	private void setMachine(boolean machine) {this.machine = machine;}	
 	public boolean isMachine() {return this.machine;}
-
+	
+	public void setWinner(boolean winner) {this.winner = winner;}	
+	public boolean isWinner() {return this.winner;}
+	
 	public void setInput(String input) {this.input = input;}	
 	public String getInput() {return this.input;}
 	
 	public void setAmount(int amount) {this.amount = amount;}	
 	public int getAmount() {return this.amount;}
-	
-	public void setWinner(boolean winner) {this.winner = winner;}	
-	public boolean isWinner() {return this.winner;}
-	
+
 	
 	public void optionMachine(String option) {
 		if ( !option.equals("0") || option.equals("") ) {
