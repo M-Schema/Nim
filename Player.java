@@ -15,6 +15,8 @@ public class Player {
 		this.name = name;
 		this.machine = false;
 		this.winner = false;
+		this.input = "";
+		this.amount = "";
 	}
 
 	public void setName(String name) {this.name = name;}	
