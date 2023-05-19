@@ -1,7 +1,4 @@
 # Nim
-
-@version **2023-05-03**
-
 @author **Schema**
 
 
