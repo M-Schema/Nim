@@ -14,6 +14,12 @@ public class Info {
 	public boolean isErrorStatus() {return errorStatus;}
 
 	
+	public String textError() {
+		return "Eingabe war falsch! \n"
+				+"Bitte wiederholen: "
+				;
+	}
+	
 	public String textBeginning() {
 		return "Nim ist ein Spiel für Zwei, die gegeneinander spielen. \n"
 				+"Gegeben ist ein Spielfeld mit einem Haufen von 13 Streichhoelzern. \n"
@@ -55,12 +61,6 @@ public class Info {
 	public String textWinner(String playerName, int turn) {
 		return "Gewonnen hat: "+ playerName +"\n"
 				+"Runden gespielt: "+ turn
-				;
-	}
-	
-	public String textError() {
-		return "Eingabe war falsch! \n"
-				+"Bitte wiederholen: "
 				;
 	}	
 }
