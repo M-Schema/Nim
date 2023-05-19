@@ -1,3 +1,5 @@
+package com.github.breakfastclubwf.nim;
+
 import javax.swing.JOptionPane;
 
 /**
