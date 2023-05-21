@@ -1,4 +1,4 @@
-package com.github.breakfastclubwf.nim;
+//package com.github.breakfastclubwf.nim;
 
 import javax.swing.JOptionPane;
 
@@ -25,7 +25,7 @@ public class Main {
 		playerB.optionMachine(
 				JOptionPane.showInputDialog(info.textOptionMachine())
 				);
-		if ( playerB.isMachine ) {
+		if ( playerB.isMachine() ) {
 			playerB.setName("Deus ex Machina");
 		}
 		
@@ -38,7 +38,7 @@ public class Main {
 			if ( player.isMachine() == false ) {		
 				
 				player.setInput("");
-				info.setError(false);
+				info.setErrorStatus(false);
 				while ( field.canDrawMatches( player.getInput() ) == false ) {
 					if ( info.isErrorStatus() ) {
 						JOptionPane.showMessageDialog(null,	
@@ -57,7 +57,7 @@ public class Main {
 								)
 							);
 					player.lockAmount( player.getInput() );
-					info.setError(true);
+					info.setErrorStatus(true);
 				}
 			}else {
 				JOptionPane.showMessageDialog(null,

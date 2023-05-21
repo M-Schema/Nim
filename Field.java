@@ -1,4 +1,4 @@
-package com.github.breakfastclubwf.nim;
+//package com.github.breakfastclubwf.nim;
 
 /**
  * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
@@ -20,7 +20,7 @@ public class Field {
 	public int getTurn() {return this.turn;}
 	
 	public void nextTurn() {
-		setTurn( getTurn()++ );
+		setTurn( getTurn() +1 );
 	}
 	
 	public boolean canDrawMatches(String amount) {

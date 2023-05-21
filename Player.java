@@ -1,4 +1,4 @@
-package com.github.breakfastclubwf.nim;
+//package com.github.breakfastclubwf.nim;
 
 import java.util.Random;
 
@@ -18,7 +18,7 @@ public class Player {
 		this.machine = false;
 		this.winner = false;
 		this.input = "";
-		this.amount = "";
+		this.amount = 0;
 	}
 
 	public void setName(String name) {this.name = name;}	
