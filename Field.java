@@ -1,9 +1,5 @@
 //package com.github.breakfastclubwf.nim;
 
-/**
- * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
- */
-
 public class Field {
 	private int matches;
 	private int turn;
