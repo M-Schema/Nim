@@ -2,11 +2,6 @@
 
 import javax.swing.JOptionPane;
 
-/**
- * @version 2023-05-19
- * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
- */
-
 public class Main {
 
 	public static void main(String[] args) {
