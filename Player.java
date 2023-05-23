@@ -2,10 +2,6 @@
 
 import java.util.Random;
 
-/**
- * @author Schema <WF221.M.Schema@BK-Duisdorf.de>
- */
-
 public class Player {
 	private String name;
 	private boolean machine;
